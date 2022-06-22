@@ -1,4 +1,29 @@
+$green: #96ff81;
+$background:#2a2f3d;
+@font-face {
+    font-family: pacaembu;
+    src: url("../../Fonts/Pacaembu\ Bold.ttf");
+}
+
+@function flexdirection($direction) {
+   @return $direction;
+}
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: flexdirection(column);
+}
+
 .hero{
     height:20vh;
-    background-color: #2a2f3d;
+    color:$green;
+    background-color: $background;
+    @include flex;
+& h1{
+    font-family: pacaembu;
+    text-align: center;
+    font-size: 50px;
 }
+}
+ 
