@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+$white:"#fcfeff";
+.result{
+    margin: 40px auto 0 auto;
+    text-align: center;
+    @include flex;
+    width:36%;
+    background-color: $background;
+    border-radius: 5px;
+    padding:50px;
+    & h2{
+        margin-bottom: 30px;
+    }
+& h2, h3{
+    color:$green;
+    font-family: 'Inter', sans-serif;
+}
+   & h3{
+    margin-bottom: 10px;
+   }
+& .json{
+    display: flex;
+    flex-direction: column;
+    
+    & div{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    }
+   
+}
+}
+
+.result p{
+    color:#fcfeff;
+}

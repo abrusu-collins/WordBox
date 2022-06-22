@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -67,4 +68,57 @@ button:hover {
 ::placeholder {
   /* Most modern browsers support this now. */
   color: #96ff81;
+}
+
+.result {
+  margin: 40px auto 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 36%;
+  background-color: #2a2f3d;
+  border-radius: 5px;
+  padding: 50px;
+}
+.result h2 {
+  margin-bottom: 30px;
+}
+.result h2, .result h3 {
+  color: #96ff81;
+  font-family: "Inter", sans-serif;
+}
+.result h3 {
+  margin-bottom: 10px;
+}
+.result .json {
+  display: flex;
+  flex-direction: column;
+}
+.result .json div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.result p {
+  color: #fcfeff;
+}
+
+footer {
+  margin-top: 30px;
+  color: #96ff81;
+  background-color: #2a2f3d;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+body {
+  background-color: #20232a;
 }
