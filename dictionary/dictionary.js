@@ -15,6 +15,7 @@ function search(e) {
     alert("Enter a word");
   } else {
     result.innerHTML = `<i class="fa fa-spinner fa-spin fa-3x"></i>`;
+    footer.style.position = "absolute";
 
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/ ${word}`)
       .then((res) => {
