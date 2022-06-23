@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+    <title>Text To Speech</title>
+</head>
+
+<body>
+    <style>
+        img {
+            width: 20%;
+            display: block;
+            margin: auto;
+            filter: opacity(0.5) drop-shadow(0 0 0 #32fbe2);
+        }
+
+        #textinput,
+        .range-group,
+        #select {
+            width: 40%;
+            margin: auto;
+            display: block;
+        }
+
+        .btn {
+            display: block;
+            margin: auto;
+        }
+
+        #speeddiv,
+        #pitchdiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .table {
+            width: 50%;
+            margin: auto;
+        }
+
+        #historyhead {
+            margin-top: 150px;
+        }
+
+        #play {
+            background: #7162EC;
+            text-align: center;
+        }
+
+        #deleted {
+            background: #DC0C4C;
+            text-align: center;
+        }
+
+        #play:hover,
+        #deleted:hover {
+            cursor: pointer;
+        }
+        #no{
+            text-align: center;
+        }
+        tbody{
+            border-bottom:10px solid rgb(26, 9, 51);
+            
+        }
+        tr{
+            
+            justify-content: center;
+        }
+        #speakcontrol{
+            width:30%;
+          display: flex;
+          margin:auto;
+        }
+    </style>
+    <h1 class="text-center mt-4">Text <span class="text-muted"> To </span> <span class="text-success">Speech</span></h1>
+    <img src="imago.png" alt="text-to-speech">
+
+    <div class="form-group">
+        <input type="text" class="form-control form-control-lg mt-2 " id="textinput" placeholder="Enter the text...">
+    </div>
+    <div class="range-group">
+        <div id="speeddiv" class="mt-4">
+            <h5>Speed</h5>
+            <h5 id="speedval">1.5</h5>
+        </div>
+        <input type="range" class="form-range" min="0" max="3" step="0.1" id="speed">
+        <div id="pitchdiv" class="mt-4">
+            <h5>Pitch</h5>
+            <h5 id="pitchval">1.5</h5>
+        </div>
+        <input type="range" class="form-range" min="0" max="3" step="0.1" id="pitch">
+    </div>
+    <select name="selector" class="form-select mt-4" id="select">
+
+    </select>
+    <button type="button" class="btn btn-outline-primary mt-4" id="btn">Speak</button>
+
+    <div id="speakcontrol" class="mt-4">
+        
+    <button class="btn btn-outline-primary" id="a">pause</button>
+    <button class="btn btn-outline-primary" id="b">resume</button>
+    <button class="btn btn-outline-primary" id="c">stop</button>
+
+    </div>
+    <table class="table  mt-4 mb-5" id="table">
+        <h1 class="text-center" id="historyhead">HISTORY</h1>
+
+
+
+    </table>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
