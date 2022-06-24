@@ -16,7 +16,8 @@ input.addEventListener('change', function() {
 			
 			var fr=new FileReader();
 			fr.onload=function(){
-				console.log(fr.result)
+         window.data=fr.result;
+				console.log(window.data)
 			}
 			
 			fr.readAsText(this.files[0]);
@@ -50,15 +51,14 @@ if (synth.onvoiceschanged !== undefined) {
 
 function speak(e) {
   e.preventDefault();
-  var fr=new FileReader();
   
-  if (fr.result == "") {
-    fr.result = "the lazy fox jumped over the brown dog";
+  if (window.data == "") {
+    window.data = "the lazy fox jumped over the brown dog";
   }
 
   
 
-  var utterThis = new SpeechSynthesisUtterance(fr.result);
+  var utterThis = new SpeechSynthesisUtterance(window.data);
   var selectedOption = select.selectedOptions[0].getAttribute("data-name");
   for (var i = 0; i < voices.length; i++) {
     if (voices[i].name === selectedOption) {
