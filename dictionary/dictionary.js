@@ -44,6 +44,19 @@ function search(e) {
         console.log(div);
       });
 
+      let audioCode = !(data[0].phonetics[0]) ? " <h3>Pronunciation</h3> <br><p>Audio not found!</p>": `
+      <div class="audio">
+            <h3>Pronunciation</h3>
+            <audio controls >
+                <source src= ${
+                  data[0].phonetics[0].audio !== ""
+                    ? data[0].phonetics[0].audio
+                    : data[0].phonetics[1].audio
+                }   type="audio/mp3">
+            </audio>
+        </div>
+      `
+
       let newHtml = `<main>
     <h2>${data[0].word.toUpperCase()}</h2>
 
@@ -59,16 +72,7 @@ function search(e) {
            ${div.textContent}
         </div>
 
-        <div class="audio">
-            <h3>Pronunciation</h3>
-            <audio controls >
-                <source src= ${
-                  data[0].phonetics[0].audio !== ""
-                    ? data[0].phonetics[0].audio
-                    : data[0].phonetics[1].audio
-                }   type="audio/mp3">
-            </audio>
-        </div>
+        ${audioCode}
     </div> 
 </main>`;
 
