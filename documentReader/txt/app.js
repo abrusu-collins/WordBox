@@ -56,8 +56,8 @@ function speak(e) {
     window.data = "the lazy fox jumped over the brown dog";
   }
 
-  var myWindow = window.open("", "MsgWindow", "width=500,height=1000");
-  myWindow.document.write(`${window.data}`);
+  var myWindow = window.open("./newWindow.html", "MsgWindow", "width=500,height=1000");
+  myWindow.document.body.innerHTML=`<p>${window.data}</p>`;
 
   var utterThis = new SpeechSynthesisUtterance(window.data);
   var selectedOption = select.selectedOptions[0].getAttribute("data-name");
