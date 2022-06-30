@@ -12,6 +12,7 @@ pitchgauge.addEventListener("input", pitchincrease, true);
 speedgauge.addEventListener("input", speedincrease, true);
 
 //file reading
+window.data= undefined;
 input.addEventListener('change', function() {
 			
 			var fr=new FileReader();
@@ -52,12 +53,12 @@ if (synth.onvoiceschanged !== undefined) {
 function speak(e) {
   e.preventDefault();
   
-  if (window.data == "") {
-    window.data = "the lazy fox jumped over the brown dog";
+  if (window.data === undefined) {
+ alert("Choose a txt file from your device")
   }
-
-  var myWindow = window.open("./newWindow.html", "MsgWindow", "width=500,height=1000");
-  myWindow.document.body.innerHTML=`<p>${window.data}</p>`;
+else{
+  var newwindow= window.open('', '', 'width=500, height=500');
+  newwindow.document.write(`<pre>${window.data}</pre>`);
 
   var utterThis = new SpeechSynthesisUtterance(window.data);
   var selectedOption = select.selectedOptions[0].getAttribute("data-name");
@@ -74,7 +75,7 @@ function speak(e) {
   input.blur();
 
   
-
+}
 
 }
 
