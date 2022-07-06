@@ -11,7 +11,7 @@
 
 <body>
     <style>
-        img {
+        .hero-img {
             width: 20%;
             display: block;
             margin: auto;
@@ -79,8 +79,61 @@
         }
 
         /*media queries*/
-        @media screen and (width:899px) {
-            .hero-img{}
+        @media screen and (max-width:899px) {
+            .hero-img {
+                width:30%;
+            }
+
+            #speakcontrol{
+                margin-bottom: 30px;
+            }
+            #textinput,
+        .range-group,
+        #select {
+            width:60%;
+        }
+        @media screen and (max-width:751px) {
+            #speakcontrol{
+                width:50%;
+            } 
+        }
+        @media screen and (max-width:674px) {
+            .hero-img {
+                width:40%;
+            }
+
+            #speakcontrol{
+                margin-bottom: 40px;
+            }
+            #textinput,
+        .range-group,
+        #select {
+            width:70%;
+        }
+    }
+    @media screen and (max-width:578px) {
+        .hero-img {
+                width:50%;
+            }
+    }
+        @media screen and (max-width:440px) {
+            #speakcontrol{
+                width:70%;
+            }
+            .hero-img {
+                width:60%;
+            }
+            #textinput,
+        .range-group,
+        #select {
+            width:80%;
+        }
+        }
+        @media screen and (max-width:440px) {
+            #speakcontrol{
+                width:80%;
+            }
+        }
         }
     </style>
     <h1 class="text-center mt-4 text-success">Text File To Speech</h1>
