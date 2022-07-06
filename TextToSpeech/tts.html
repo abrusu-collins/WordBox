@@ -77,9 +77,62 @@
           display: flex;
           margin:auto;
         }
+         /*media queries*/
+         @media screen and (max-width:899px) {
+            .hero-img {
+                width:30%;
+            }
+
+           
+            #textinput,
+        .range-group,
+        #select {
+            width:60%;
+        }
+        @media screen and (max-width:751px) {
+            #speakcontrol{
+                width:50%;
+            } 
+        }
+        @media screen and (max-width:674px) {
+            .hero-img {
+                width:40%;
+            }
+
+          
+            #textinput,
+        .range-group,
+        #select {
+            width:70%;
+        }
+    }
+    @media screen and (max-width:578px) {
+        .hero-img {
+                width:50%;
+            }
+    }
+        @media screen and (max-width:440px) {
+            #speakcontrol{
+                width:70%;
+            }
+            .hero-img {
+                width:60%;
+            }
+            #textinput,
+        .range-group,
+        #select {
+            width:80%;
+        }
+        }
+        @media screen and (max-width:440px) {
+            #speakcontrol{
+                width:80%;
+            }
+        }
+        }
     </style>
-    <h1 class="text-center mt-4">Text <span class="text-muted"> To </span> <span class="text-success">Speech</span></h1>
-    <img src="imago.png" alt="text-to-speech">
+    <h1 class="text-center mt-4 text-success">Text  To Speech</h1>
+    <img class="hero-img" src="imago.png" alt="text-to-speech">
 
     <div class="form-group">
         <input type="text" class="form-control form-control-lg mt-2 " id="textinput" placeholder="Enter the text...">
