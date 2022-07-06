@@ -77,9 +77,14 @@
           display: flex;
           margin:auto;
         }
+
+        /*media queries*/
+        @media screen and (width:899px) {
+            .hero-img{}
+        }
     </style>
-    <h1 class="text-center mt-4">Text File <span class="text-muted"> To </span> <span class="text-success">Speech</span></h1>
-    <img src="imago.png" alt="text-to-speech">
+    <h1 class="text-center mt-4 text-success">Text File To Speech</h1>
+    <img class="hero-img" src="imago.png" alt="text-to-speech">
 
     <div class="form-group">
         <input type="file" class="form-control form-control-lg mt-2 " id="textinput">
