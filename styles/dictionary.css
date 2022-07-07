@@ -123,6 +123,33 @@ footer {
   bottom: 0;
 }
 
+@media screen and (max-width: 1230px) {
+  #btn {
+    width: 7%;
+  }
+
+  .result {
+    width: 38%;
+  }
+}
+@media screen and (max-width: 989px) {
+  .form input {
+    width: 50%;
+  }
+
+  .result {
+    width: 58%;
+  }
+}
+@media screen and (max-width: 871px) {
+  #btn {
+    width: 10%;
+  }
+
+  .result {
+    width: 61%;
+  }
+}
 body {
   background-color: #20232a;
 }
