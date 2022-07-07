@@ -42,7 +42,7 @@
             width: 50%;
             margin: auto;
         }
-
+ 
         #historyhead {
             margin-top: 150px;
         }
@@ -68,10 +68,7 @@
             border-bottom:10px solid rgb(26, 9, 51);
             
         }
-        tr{
-            
-            justify-content: center;
-        }
+       
         #speakcontrol{
             width:30%;
           display: flex;
@@ -86,7 +83,7 @@
            
             #textinput,
         .range-group,
-        #select {
+        #select ,.table{
             width:60%;
         }
         @media screen and (max-width:751px) {
@@ -102,7 +99,7 @@
           
             #textinput,
         .range-group,
-        #select {
+        #select, .table {
             width:70%;
         }
     }
@@ -110,6 +107,15 @@
         .hero-img {
                 width:50%;
             }
+    }
+    @media screen and (max-width:535px) {
+        tr{
+            display: flex;
+            flex-direction: column;
+           
+            justify-content: center;
+        }
+        table
     }
         @media screen and (max-width:440px) {
             #speakcontrol{
@@ -163,8 +169,6 @@
     </div>
     <table class="table  mt-4 mb-5" id="table">
         <h1 class="text-center" id="historyhead">HISTORY</h1>
-
-
 
     </table>
 
