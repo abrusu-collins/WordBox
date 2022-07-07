@@ -25,3 +25,85 @@
         width:61%;
     }
 }
+
+@media screen and (max-width:616px) {
+    .form input{
+        width:60%;
+    }
+    #btn{
+        width:13%;
+    }
+    .result{
+        width:74%;
+    }
+}
+
+@media screen and (max-width:541px) {
+
+    .hero h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:466px) {
+    .form input{
+        width:70%;
+    }
+    #btn{
+        width:16%;
+    }
+    .result{
+        width:87%;
+    }
+}
+
+@media screen and (max-width:455px) {
+
+    footer{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:422px) {
+
+    .hero h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:354px) {
+    
+    #btn{
+        width:18%;
+    }
+    .result{
+        width:89%;
+    }
+}
+
+@media screen and (max-width:345px) {
+    
+    .form input{
+        width:75%;
+    }
+    #btn{
+        width:20%;
+    }
+    .result{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:338px) {
+
+    .hero h1{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width:331px) {
+
+    footer{
+        font-size: 10px;
+    }
+}
