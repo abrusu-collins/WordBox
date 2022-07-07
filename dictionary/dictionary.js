@@ -23,7 +23,7 @@ function search(e) {
       })
       .then((data) => {
         createElements(data);
-      }).catch((err)=>{console.log(`alert ${err}`)});
+      }).catch((err)=>{alert(` ${err}`)});
   }
 
   function createElements(data) {
