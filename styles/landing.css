@@ -110,4 +110,26 @@ footer {
   background-color: #79589f;
   color: #fcfeff;
   margin-top: 42px;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+footer .socials a {
+  margin-right: 10px;
+}
+
+#feedback {
+  padding: 10px 15px;
+  border: 1px solid #fcfeff;
+  border-radius: 5px;
+  background-color: #5B2C6F;
+}
+#feedback:hover {
+  background-color: #79589f;
 }
