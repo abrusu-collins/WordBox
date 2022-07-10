@@ -1,22 +1,48 @@
 .tools{
     font-family: 'Inter', sans-serif;
   color:$background;
+  & .toolsgrid{
+    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
   & h1{
     text-align: center;
     font-size: 50px;
-    margin:30px auto 30px auto;
+    margin:42px auto 42px auto;
   }
-  
+  & .alltools{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width:60%;
+    grid-gap:2rem;
+    
+    & div{
+      border: 1px solid $background;
+      text-align: center;
+      padding:20px;
+      border-radius: 5px;
+      
+      
+      & a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 15px;
+        background-color:#5B2C6F;
+        border-radius: 4px;
+        color:$color;
+      }
+    }
+  }
+  & img{
+ 
+    width:20%;
+  }
 }
 
 
-// input text to speech
-// text file reader
-// word doc reader
-// pdf reader
-// img text extraction
-// img text reader
-// word dictionary
+
 
 // for each box
 // icon
@@ -26,3 +52,5 @@
 // can even click box to go to link
 // grey outline
 // turns violet on hover
+
+ 

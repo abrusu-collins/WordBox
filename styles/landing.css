@@ -58,8 +58,37 @@
   font-family: "Inter", sans-serif;
   color: #79589f;
 }
+.tools .toolsgrid {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .tools h1 {
   text-align: center;
   font-size: 50px;
-  margin: 30px auto 30px auto;
+  margin: 42px auto 42px auto;
+}
+.tools .alltools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  grid-gap: 2rem;
+}
+.tools .alltools div {
+  border: 1px solid #79589f;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+.tools .alltools div a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #5B2C6F;
+  border-radius: 4px;
+  color: #fcfeff;
+}
+.tools img {
+  width: 20%;
 }
