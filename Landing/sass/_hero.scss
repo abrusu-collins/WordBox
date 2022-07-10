@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+$background:#79589f;
+$color:#fcfeff;
+.mainhero{
+    height: 80vh;
+    width:100%;
+    background-color: $background;
+    color:$color;
+    font-family: 'Inter', sans-serif;
+
+    & .hero{
+        width:80%;
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin:auto;
+
+    & a{
+        text-decoration: none;
+        color:inherit;
+        padding: 10px 15px;
+        border:1px solid $color;
+        border-radius: 4px;
+        background-color: #5B2C6F;
+    }
+    & .left{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // margin-left: 150px;
+    background-image: url("../download\ \(2\).png");
+       & h1{
+        font-size: 90px;
+        margin-bottom: 10px;
+    }
+    & p{
+        margin-bottom: 15px;
+    }
+}
+    & img{
+        // object-fit: cover;
+        // object-position: right;
+        width:25%;
+    }
+    }
+}
