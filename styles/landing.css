@@ -48,3 +48,7 @@
 .mainhero .hero img {
   width: 25%;
 }
+
+.hero a:hover {
+  background-color: #79589f;
+}
