@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .mainhero {
@@ -51,4 +52,14 @@
 
 .hero a:hover {
   background-color: #79589f;
+}
+
+.tools {
+  font-family: "Inter", sans-serif;
+  color: #79589f;
+}
+.tools h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 30px auto 30px auto;
 }
