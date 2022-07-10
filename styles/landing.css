@@ -135,13 +135,47 @@ footer .socials a {
 }
 
 @media screen and (max-width: 1261px) {
-  .hero img {
-    width: 10%;
+  .mainhero .hero img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1046px) {
+  .mainhero .hero img {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 887px) {
+  .mainhero .hero img {
+    display: none;
+  }
+  .mainhero {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainhero .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainhero {
+    background-position: center;
+  }
+  .mainhero .hero .left h1 {
+    font-size: 70px;
   }
 }
 @media screen and (max-width: 1006px) {
   .tools .toolsgrid .alltools {
     width: 75%;
+  }
+  .tools .toolsgrid .alltools img {
+    width: 30%;
   }
 }
 @media screen and (max-width: 736px) {
@@ -153,9 +187,23 @@ footer .socials a {
   .tools .toolsgrid .alltools {
     width: 95%;
   }
+  .tools .toolsgrid .alltools img {
+    width: 35%;
+  }
 }
 @media screen and (max-width: 477px) {
   .tools .toolsgrid .alltools {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .tools .toolsgrid .alltools img {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 582px) {
+  footer {
+    flex-direction: column;
+  }
+  .socials {
+    margin: 20px auto;
   }
 }
