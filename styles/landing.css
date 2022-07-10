@@ -105,3 +105,9 @@
 .alltools div a:hover {
   background-color: #79589f;
 }
+
+footer {
+  background-color: #79589f;
+  color: #fcfeff;
+  margin-top: 42px;
+}
