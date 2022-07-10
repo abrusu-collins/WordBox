@@ -90,5 +90,18 @@
   color: #fcfeff;
 }
 .tools img {
+  margin-bottom: 10px;
   width: 20%;
+}
+.tools p {
+  margin-bottom: 10px;
+}
+.tools .title {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #000;
+}
+
+.alltools div a:hover {
+  background-color: #79589f;
 }
