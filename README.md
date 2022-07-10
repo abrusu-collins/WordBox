@@ -1,10 +1,17 @@
 # WordBox
-A web app which has the following functions, 1. word dictionary✔, 2. Text to Speech✔, 3. Read Documents Aloud✔, 4. img to text and speech✔, 5. Anagrammer 6. Speech to text
+A web app which has the following functions:
 
-<b>Read Documents Aloud Got 2 sections</b>
-1. txt files ✔
-2. Other Files✔
+1. Image text extractor
+2. word dictionary
+3. Text file reader
+4. PDF file reader
+5. doc file reader
+6. Text reader
+
+The second part of this project is at : https://github.com/abrusu-collins/OCR
+
+Live site at : https://clisteocrr.herokuapp.com/
 
 
-Landing Page design
-Hero background  #79589f
+
+
