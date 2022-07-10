@@ -133,3 +133,29 @@ footer .socials a {
 #feedback:hover {
   background-color: #79589f;
 }
+
+@media screen and (max-width: 1261px) {
+  .hero img {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .tools .toolsgrid .alltools {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .tools .toolsgrid .alltools {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 566px) {
+  .tools .toolsgrid .alltools {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 477px) {
+  .tools .toolsgrid .alltools {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
