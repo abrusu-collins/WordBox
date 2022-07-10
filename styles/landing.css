@@ -11,6 +11,10 @@
   background-color: #79589f;
   color: #fcfeff;
   font-family: "Inter", sans-serif;
+  background-image: url(a.png);
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .mainhero .hero {
   width: 80%;
@@ -33,7 +37,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../download (2).png");
 }
 .mainhero .hero .left h1 {
   font-size: 90px;

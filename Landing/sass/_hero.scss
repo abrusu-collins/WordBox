@@ -7,6 +7,10 @@ $color:#fcfeff;
     background-color: $background;
     color:$color;
     font-family: 'Inter', sans-serif;
+    background-image: url(a.png);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     & .hero{
         width:80%;
@@ -30,7 +34,7 @@ $color:#fcfeff;
     justify-content: center;
     flex-direction: column;
     // margin-left: 150px;
-    background-image: url("../download\ \(2\).png");
+   
        & h1{
         font-size: 90px;
         margin-bottom: 10px;
